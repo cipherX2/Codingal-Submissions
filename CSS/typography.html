@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography Example</title>
+    <style>
+        /* Universal styles for the body */
+        body {
+            font-family: 'Arial', sans-serif;
+            /* Default font family */
+            line-height: 1.6;
+            /* Line spacing */
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Heading styles */
+        h1 {
+            font-family: 'Helvetica Neue', sans-serif;
+            /* Specific font for heading */
+            font-size: 36px;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+            text-transform: uppercase;
+            /* Makes text uppercase */
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: normal;
+            text-align: left;
+            color: #444;
+            margin-top: 20px;
+        }
+
+        /* Paragraph styles */
+        p {
+            font-size: 16px;
+            color: #666;
+            text-align: justify;
+            /* Justify the text to align both sides */
+            margin-bottom: 15px;
+        }
+
+        /* Links (anchor) styles */
+        a {
+            color: #008cba;
+            /* Blue color for links */
+            text-decoration: none;
+            /* Removes underline */
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #005f73;
+            /* Darker color on hover */
+            text-decoration: underline;
+        }
+
+        /* Custom font style using Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        .roboto-text {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Blockquote styles */
+        blockquote {
+            font-style: italic;
+            color: #555;
+            border-left: 5px solid #ccc;
+            padding-left: 15px;
+            margin-left: 20px;
+        }
+
+        /* List styles */
+        ul {
+            list-style-type: square;
+            margin-left: 40px;
+        }
+
+        li {
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Typography in CSS</h1>
+    <h2>Why Typography Matters</h2>
+    <p>
+        Typography is one of the most important aspects of web design. It involves choosing appropriate fonts, sizes,
+        line spacing, and other styling elements that improve readability and enhance user experience. Good typography
+        ensures that the content is clear, readable, and visually appealing.
+    </p>
+
+    <p class="roboto-text">
+        This paragraph uses the "Roboto" font from Google Fonts. The use of web fonts allows you to incorporate custom
+        typography into your website for better design.
+    </p>
+
+    <blockquote>
+        "Typography is the craft of endowing human language with a durable visual form." – Robert Bringhurst
+    </blockquote>
+
+    <h2>Styling Links and Lists</h2>
+    <ul>
+        <li>Font family selection</li>
+        <li>Font size and weight adjustments</li>
+        <li>Text alignment and spacing</li>
+        <li>Color and hover effects</li>
+    </ul>
+
+    <p>
+        Learn more about typography by reading our <a href="#">design guide</a> for a deeper dive into the topic.
+    </p>
+
+</body>
+
+</html>
