@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background CSS Example</title>
+    <style>
+        /* Set background color for the entire page */
+        body {
+            background-color: #f0f8ff;
+            /* Alice blue */
+        }
+
+        /* Set background image for the div with a gradient overlay */
+        .image-background {
+            background: url('https://via.placeholder.com/1200x500') no-repeat center center;
+            background-size: cover;
+            width: 100%;
+            height: 300px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Set a gradient background */
+        .gradient-background {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Background CSS Example</h1>
+
+    <!-- Div with an image as background -->
+    <div class="image-background">
+        Beautiful Landscape Background
+    </div>
+
+    <!-- Div with a gradient background -->
+    <div class="gradient-background">
+        Gradient Background Effect
+    </div>
+
+</body>
+
+</html>
