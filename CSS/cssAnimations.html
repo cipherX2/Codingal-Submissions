@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Example</title>
+    <style>
+        /* Define the animation */
+        @keyframes moveBox {
+            0% {
+                transform: translateX(0);
+                /* Start position */
+                background-color: blue;
+            }
+
+            50% {
+                transform: translateX(200px);
+                /* Move 200px to the right */
+                background-color: green;
+            }
+
+            100% {
+                transform: translateX(0);
+                /* Return to the starting position */
+                background-color: blue;
+            }
+        }
+
+        /* Style the box */
+        .animated-box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: moveBox 3s infinite;
+            /* Apply the animation */
+        }
+
+        /* Add a hover effect for extra interaction */
+        .animated-box:hover {
+            transform: scale(1.2);
+            /* Enlarge the box when hovered */
+            transition: transform 0.3s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Animation Example</h1>
+
+    <!-- Animated box -->
+    <div class="animated-box"></div>
+
+</body>
+
+</html>
