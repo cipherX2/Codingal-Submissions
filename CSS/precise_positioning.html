@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precise Positioning Example</title>
+    <style>
+        /* Basic styling for the container */
+        .container {
+            position: relative;
+            /* Set the container to relative for absolute positioning inside */
+            width: 500px;
+            height: 500px;
+            border: 2px solid #333;
+            margin: 50px auto;
+            background-color: #f4f4f4;
+        }
+
+        /* Static element (default position) */
+        .static-box {
+            width: 100px;
+            height: 100px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            margin: 20px;
+        }
+
+        /* Relative positioning */
+        .relative-box {
+            width: 100px;
+            height: 100px;
+            background-color: #FF9800;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            top: 50px;
+            /* Move it 50px down from its normal position */
+            left: 50px;
+            /* Move it 50px to the right from its normal position */
+        }
+
+        /* Absolute positioning */
+        .absolute-box {
+            width: 100px;
+            height: 100px;
+            background-color: #2196F3;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            position: absolute;
+            top: 100px;
+            /* Position it 100px from the top of the container */
+            left: 100px;
+            /* Position it 100px from the left of the container */
+        }
+
+        /* Fixed positioning */
+        .fixed-box {
+            width: 100px;
+            height: 100px;
+            background-color: #9C27B0;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            position: fixed;
+            top: 10px;
+            /* Position it 10px from the top of the browser window */
+            right: 10px;
+            /* Position it 10px from the right of the browser window */
+        }
+
+        /* Sticky positioning */
+        .sticky-box {
+            width: 100px;
+            height: 100px;
+            background-color: #FFC107;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            position: -webkit-sticky;
+            /* For Safari */
+            position: sticky;
+            top: 20px;
+            /* Stick it 20px from the top of the container when scrolling */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Precise Positioning Example</h1>
+
+    <div class="container">
+        <div class="static-box">Static</div>
+        <div class="relative-box">Relative</div>
+        <div class="absolute-box">Absolute</div>
+    </div>
+
+    <div class="fixed-box">Fixed</div>
+    <div class="sticky-box">Sticky</div>
+
+</body>
+
+</html>
