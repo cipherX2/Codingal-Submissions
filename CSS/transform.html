@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform Example</title>
+    <style>
+        /* Style for the box */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: teal;
+            margin: 50px;
+            transition: transform 0.5s ease;
+            /* Smooth transition for transformations */
+        }
+
+        /* Transformations on hover */
+        .box:hover {
+            transform: translate(100px, 100px) rotate(45deg) scale(1.5) skew(20deg, 10deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Transform Example</h1>
+
+    <!-- Box that will transform on hover -->
+    <div class="box"></div>
+
+</body>
+
+</html>
