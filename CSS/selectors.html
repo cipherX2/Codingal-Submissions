@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /* Universal selector: targets all elements */
+        * {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Type selector (element selector): targets all <h1> elements */
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+
+        /* Class selector: targets all elements with class "highlight" */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /* ID selector: targets the element with id "unique" */
+        #unique {
+            color: green;
+            font-size: 20px;
+        }
+
+        /* Descendant selector: targets <p> elements inside a <div> */
+        div p {
+            color: darkgreen;
+            font-size: 18px;
+        }
+
+        /* Attribute selector: targets <a> elements with the href attribute starting with "https" */
+        a[href^="https"] {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* Child selector: targets <p> elements that are direct children of <div> */
+        div>p {
+            font-style: italic;
+        }
+
+        /* Pseudo-class selector: targets the first <p> element */
+        p:first-child {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Pseudo-element selector: adds content before the <h2> element */
+        h2::before {
+            content: "🔹 ";
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Welcome to CSS Selectors Example</h1>
+
+    <div>
+        <p>This is a paragraph inside a div.</p>
+        <p class="highlight">This paragraph is highlighted with a class.</p>
+    </div>
+
+    <p id="unique">This paragraph has a unique style using an ID selector.</p>
+
+    <a href="https://www.example.com">Visit Example Website</a><br>
+    <a href="http://www.test.com">Visit Test Website</a><br>
+
+    <h2>Learn More</h2>
+
+</body>
+
+</html>
