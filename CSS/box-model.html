@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Example</title>
+    <style>
+        /* Box Model Styling */
+        .box {
+            width: 200px;
+            height: 150px;
+            background-color: #4CAF50;
+            /* Green background */
+            color: white;
+            padding: 20px;
+            /* Space inside the box */
+            border: 5px solid #333;
+            /* Solid border */
+            margin: 30px;
+            /* Space outside the box */
+            box-sizing: border-box;
+            /* Include padding and border in width and height */
+            transition: all 0.3s ease;
+        }
+
+        /* Hover effect */
+        .box:hover {
+            background-color: #45a049;
+            /* Darker green on hover */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            /* Shadow around the box */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Understanding the CSS Box Model</h1>
+
+    <div class="box">
+        This box demonstrates the CSS Box Model.
+        It has content, padding, border, and margin.
+    </div>
+
+</body>
+
+</html>
