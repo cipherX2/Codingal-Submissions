@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadow, Text Indent, and Box Shadow</title>
+    <style>
+        /* Text Shadow */
+        .text-shadow {
+            font-size: 36px;
+            color: #333;
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+            /* Horizontal, Vertical, Blur Radius, Color */
+        }
+
+        /* Text Indent */
+        .text-indent {
+            font-size: 18px;
+            color: #444;
+            text-indent: 30px;
+            /* Indent the first line of the paragraph */
+        }
+
+        /* Box Shadow */
+        .box-shadow {
+            width: 300px;
+            height: 200px;
+            background-color: #4CAF50;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+            /* Horizontal, Vertical, Blur Radius, Color */
+            padding: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        /* Box Shadow on Hover */
+        .box-shadow:hover {
+            box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+            /* Increase shadow effect on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Effects: Text Shadow, Text Indent, and Box Shadow</h1>
+
+    <!-- Text Shadow Example -->
+    <p class="text-shadow">This is an example of text-shadow. The text has a subtle shadow effect.</p>
+
+    <!-- Text Indent Example -->
+    <p class="text-indent">This paragraph has a text-indent. The first line is indented by 30px.</p>
+
+    <!-- Box Shadow Example -->
+    <div class="box-shadow">
+        This box has a shadow around it, giving it a 3D effect.
+    </div>
+
+</body>
+
+</html>
