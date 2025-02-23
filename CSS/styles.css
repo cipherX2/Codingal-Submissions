@@ -1,0 +1,35 @@
+/* Styling for the page header */
+h1 {
+    color: darkblue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for paragraphs */
+p {
+    font-size: 18px;
+    color: darkgreen;
+    line-height: 1.6;
+}
+
+/* Styling for buttons */
+button {
+    background-color: lightcoral;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+
+/* Styling for a div container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: lightyellow;
+    border-radius: 10px;
+}
