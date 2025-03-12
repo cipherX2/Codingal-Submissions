@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JavaScript Calculator</title>
+    <script src="new.js" defer></script>
+</head>
+
+<body>
+
+    <h1>JavaScript Simple Calculator</h1>
+
+    <!-- Simple Calculator Section -->
+    <h2>Simple Calculator</h2>
+    <input type="number" id="num1" placeholder="Enter first number">
+    <input type="number" id="num2" placeholder="Enter second number">
+    <button onclick="calculateSum()">Add</button>
+    <p>Sum: <span id="sum"></span></p>
+
+    <!-- Multiplication Section -->
+    <h2>Multiplication using Functions</h2>
+    <input type="number" id="mul1" placeholder="Enter first number">
+    <input type="number" id="mul2" placeholder="Enter second number">
+    <button onclick="multiplyNumbers()">Multiply</button>
+    <p>Multiplication Result: <span id="mulResult"></span></p>
+
+    <!-- Methods and Loops Section -->
+    <h2>Methods and Loops</h2>
+    <button onclick="loopExample()">Start Loop</button>
+    <p id="loopOutput"></p>
+
+    <!-- Sum of Arguments Section -->
+    <h2>Sum of Arguments</h2>
+    <button onclick="sumOfArguments(1, 2, 3, 4, 5)">Sum Arguments (1, 2, 3, 4, 5)</button>
+    <p id="argumentsSum"></p>
+
+    <!-- Object and Array Section -->
+    <h2>Object Data Structure and Array</h2>
+    <button onclick="accessObjectData()">Access Object Data</button>
+    <button onclick="accessArrayData()">Access Array Data</button>
+    <p id="objectData"></p>
+    <p id="arrayData"></p>
+
+    <!-- Accessing Values with HTML DOM Structure -->
+    <h2>Accessing Values with HTML DOM</h2>
+    <input type="text" id="inputText" placeholder="Enter some text">
+    <button onclick="displayText()">Display Text</button>
+    <p>Entered Text: <span id="displayText"></span></p>
+
+</body>
+
+</html>
